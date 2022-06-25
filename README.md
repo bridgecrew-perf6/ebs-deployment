@@ -17,8 +17,7 @@
     - in this case name of python file is app.py &  app = Flask("churn") is the name of the flask application 
  - waitress may be used by Windows users  in place of gunicorn  
 
-### ENVIRONMENT MGMT AND DEPENDENCIES:PIPENV
-
+### ENVIRONMENT MGMT AND DEPENDENCIES: pipenv
 https://realpython.com/pipenv-guide/#:~:text=Pipenv%20is%20a%20packaging%20tool,a%20single%20command%20line%20tool
 
 - install pipenv in linux python
