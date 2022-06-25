@@ -1,4 +1,4 @@
-### TRAINING THE MODEL
+### TRAINING THE MODEL : train.py 
 
 - we receive a json from other side making requests 
 - hence need Dictvectorizer (dv) to convert that dictionary like json object to numpy array X 
@@ -6,7 +6,7 @@
 - y_pred is the output 
 
 
-### FLASK APPLICATION AND SERVER : 
+### FLASK APPLICATION AND SERVER : app.py
 
 - not easy to send POST request from browser. hence we can use python program to call the we service 
 - jsonify does not know how to convert numpy boolean (churn in this case) into boolean. need to convert to python bool. 
@@ -35,7 +35,7 @@ https://realpython.com/pipenv-guide/#:~:text=Pipenv%20is%20a%20packaging%20tool,
 
 
 
-### MAKE REQUESTS PROGRAMATICALLY: 
+### MAKE REQUESTS PROGRAMATICALLY: make_request.py
 
 - url =  'http://localhost:9696/predict'  when we deploy at the localhost
 - url = 'http://avanish-ml-1.eba-jcqgyki4.ap-south-1.elasticbeanstalk.com/predict'          
@@ -44,7 +44,7 @@ https://realpython.com/pipenv-guide/#:~:text=Pipenv%20is%20a%20packaging%20tool,
 
 - not easy to send POST request from browser.
 - hence we can use python program to call the we service 
-- use Python's inbuilt requests library 
+- use Python's inbuilt `requests` library 
 
 
 
