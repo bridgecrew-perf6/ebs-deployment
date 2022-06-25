@@ -1,4 +1,4 @@
-# TRAINING THE MODEL
+### TRAINING THE MODEL
 
 - we receive a json from other side making requests 
 - hence need Dictvectorizer (dv) to convert that dictionary like json object to numpy array X 
@@ -6,7 +6,7 @@
 - y_pred is the output 
 
 
-# FLASK APPLICATION AND SERVER : 
+### FLASK APPLICATION AND SERVER : 
 
 - not easy to send POST request from browser. hence we can use python program to call the we service 
 - jsonify does not know how to convert numpy boolean (churn in this case) into boolean. need to convert to python bool. 
@@ -17,7 +17,7 @@
     - in this case name of python file is app.py &  app = Flask("churn") is the name of the flask application 
  - waitress may be used by Windows users  in place of gunicorn  
 
-## ENVIRONMENT MGMT AND DEPENDENCIES:PIPENV
+### ENVIRONMENT MGMT AND DEPENDENCIES:PIPENV
 
 https://realpython.com/pipenv-guide/#:~:text=Pipenv%20is%20a%20packaging%20tool,a%20single%20command%20line%20tool
 
@@ -35,7 +35,7 @@ https://realpython.com/pipenv-guide/#:~:text=Pipenv%20is%20a%20packaging%20tool,
 
 
 
-## MAKE REQUESTS PROGRAMATICALLY: 
+### MAKE REQUESTS PROGRAMATICALLY: 
 
 - url =  'http://localhost:9696/predict'  when we deploy at the localhost
 - url = 'http://avanish-ml-1.eba-jcqgyki4.ap-south-1.elasticbeanstalk.com/predict'          
@@ -48,7 +48,7 @@ https://realpython.com/pipenv-guide/#:~:text=Pipenv%20is%20a%20packaging%20tool,
 
 
 
-## EBS DEPLOYMENT : 
+### EBS DEPLOYMENT : 
 
 - see ml zoomcamp 5.7 youtube video : shows logical diagram of ebs
 - we can think of ebs to be a docker container running inside eb env. 
