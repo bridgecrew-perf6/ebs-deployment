@@ -1,5 +1,10 @@
 ## WORKFLOW FROM MODEL DEV TO MODEL DEPLOYMENT IN EBS 
 
+#### Question : How to increase instance size when deploying from command line.
+
+**Question**: How to increase the disk size and memory of docker container inside an EC2 instance.<br>
+**Answer** :  https://stackoverflow.com/questions/55405525/need-to-upgrade-docker-memory-in-aws-ec2-instance
+
 #### TRAINING THE MODEL : train.py 
 - we receive a json from other side making requests 
 - hence need Dictvectorizer (dv) to convert that dictionary like json object to numpy array X 
